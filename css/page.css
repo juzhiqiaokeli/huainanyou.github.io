@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.page {
+    width: 55vw;
+    height: 0 auto;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.tx1{
+    float: left;
+    padding:0  auto;
+}
+
+.tx2{
+    float: right;
+    padding:0  auto;
+}
+
+.words1{
+    text-align: left;
+    font-size: 17px;
+    padding-left:110px;
+    padding-top: 15px;
+}
+
+.words2{
+    text-align: right;
+    font-size: 17px;
+    padding-right:80px;
+    padding-top: 20px;
+}
+
+.te1{
+    text-align: center;
+    margin-top: 120px;
+}
+
+.te2{
+    text-align: center;
+    margin-top: 20px;
+}

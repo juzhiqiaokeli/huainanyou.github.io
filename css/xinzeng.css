@@ -1,0 +1,109 @@
+  /* 新增全局样式 */
+:root {
+    --primary-color: #c33d3d;  /* 主色-妃色 */
+    --secondary-color: #7ec4a6;  /* 辅色-碧色 */
+    --accent-color: #f9e076;  /* 点缀色-缃色 */
+}
+
+body {
+    background: #fff9f0 url('../sucai/宣纸.png'); /* 宣纸纹理背景 */
+    font-family: 'ZCOOL XiaoWei', cursive;
+}
+
+/* 顶部背景重绘 */
+.top section {
+    background: linear-gradient(to bottom, #ffebda, #fff9f0);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.font1 {
+    font-family: 'Ma Shan Zheng', cursive;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 0px var(--accent-color);
+    font-size: 3.5rem;
+}
+
+/* 对话框美化 */
+.dialogue-box {
+    background: url('image/scroll-bg.png') center/cover;
+    padding: 30px 50px;
+    border-radius: 0;
+    box-shadow: 5px 5px 15px rgba(232,111,111,0.2);
+}
+
+.dialogue-text {
+    font-size: 1.2rem;
+    color: #654321;
+    min-height: 100px;
+    background: url('image/ink-splash.png') no-repeat right bottom/80px;
+}
+
+/* 角色头像美化 */
+.character img {
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0 0 10px rgba(126,196,166,0.3);
+    transition: all 0.3s ease;
+}
+
+.character.active img {
+    transform: scale(1.1);
+    border-color: var(--primary-color);
+}
+
+/* 非遗展示区 */
+.outlook .box {
+    background: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.outlook .box::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 80%;
+    height: 15px;
+    background: url('') center/contain;
+    opacity: 0.3;
+}
+
+/* 编钟播放器美化 */
+
+/* 新增动画效果 */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.tx1 img, .tx2 img {
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.1));
+}
+
+/* 文物小卡样式 */
+#cont .ima {
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 5px;
+    background: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+;
+}
+
+#cont .ima:hover {
+    transform: rotate(3deg) scale(1.05);
+}
+
+/* 新增传统纹样分隔线 */
+.tit h1 {
+    position: relative;
+    padding: 1rem 0;
+    background: url('') center bottom/200px no-repeat;
+}
+

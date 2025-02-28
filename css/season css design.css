@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.outlook {
+    width: 55%;
+    height: 400px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    border: 3px solid #fff;
+    background-color: #fff;
+}
+
+.box>img {
+    width: 200%;
+    height: 85%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.box>span {
+    font: 200 20px '优设标题黑';
+    text-align: center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    flex-basis: 40%;
+}
+
+.box:hover>img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.container{
+    /* 相对定位 */
+    position: relative;
+    /* 弹性布局 横向排列 允许换行 */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.container .boxf{
+    position: relative;
+    width:1500px;
+    height: 400px;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* 动画过渡 */
+    transition: 0.5s;
+}
+/* 鼠标移入，盒子变大 */
+.container .boxf:hover{
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.container .boxf .img-box{
+    /* 绝对定位 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+/* 渐变遮罩（黑色——透明） 默认隐藏 */
+.container .boxf .img-box::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#222,transparent);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+}
+/* 鼠标移入，渐变遮罩显示 */
+.container .boxf:hover .img-box::before{
+    opacity: 1;
+}
+.container .boxf .img-box img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* 保持原有尺寸比例，裁切长边 */
+    object-fit: cover;
+}
+.container .boxf .text-box{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    padding-left: 20%;
+    /* 弹性布局 元素位于容器的结尾 */
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    z-index: 2;
+}
+.container .boxf .text-box h1{
+    font-size: 20px;
+    margin-bottom: 30px;
+    /* 默认移出可视范围 */
+    transform: translateY(200px);
+    transition: 0.5s;
+}
+.container .boxf:hover .text-box h1{
+    /* 鼠标移入，移入可视范围 */
+    transform: translateY(0);
+    /* 设置动画延迟时间 */
+    transition-delay: 0.3s;
+}
+.container .boxf .text-box p{
+    font-size: 13px;
+    line-height: 30px;
+    /* 默认移出可视范围 */
+    transform: translateY(200px);
+    transition: 0.5s;
+}
+.container .boxf:hover .text-box p{
+    /* 鼠标移入，移入可视范围 */
+    transform: translateY(0);
+    /* 设置动画延迟时间 */
+    transition-delay: 0.4s;
+}

@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #fcf9ee, transparent);
+    z-index: 1000;
+
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon {
+    mix-blend-mode: screen;
+    /*设置背景融合方式*/
+}
+
+section img#mountain_front {
+    z-index: 15;
+}
+
+@font-face {
+    font-family: toptitle;
+    src: url(../asset/font/FZYaoDHJW.TTF);
+}
+
+@font-face {
+    font-family: toptitle2;
+    src: url(../asset/font/FZXingKJW-B.TTF);
+}
+
+section #text {
+    position: absolute;
+    color: #8bd0ff;
+    font-size: 4vw;
+    font-family: toptitle;
+    white-space: nowrap;
+    z-index: 999;
+    transform: translateY(100px);
+    right: -20px;
+}
+
+section #btn {
+    text-decoration: none;
+    color: #472b08d3;
+    padding-bottom: 150px;
+    border-radius: 10px;
+    font-size: 3em;
+    font-family: toptitle2;
+    z-index: 999;
+    display: inline-block;
+}
+
+.sec {
+    position: relative;
+    padding: 100px;
+    z-index: 1;
+}
+
+.sec h2 {
+    font-size: 3.5em;
+    color: #841212;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    color: #d97979;
+    font-size: 1.2em;
+}
+
+
+#footer {
+    width: 100%;
+    height: 150px;
+    color: #841212;
+    text-align: center;
+    line-height: 80px;
+}
+
+.dibu {
+    width: 100%;
+    height: 200px;
+    background: #841212;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 10px;
+    padding-top: 30px;
+}
+
+.fengefu {
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 25%;
+}

@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: textfont1;
+    src: url('../asset/font/FZLongZhaoJW.TTF');
+}
+
+@font-face {
+    font-family: textfont2;
+    src: url('../asset/font/FZYaoDHJW.TTF');
+}
+
+.sec{
+    width: 70vw;
+    height: 0 auto;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.font1{
+    width: 70vw;
+    height: 0 auto;
+    font-family: textfont2;
+    color: brown;
+    margin: 0 auto;
+    margin-left: -20%;
+    margin-bottom: 30px;
+}
+
+.font2{
+    width: 70vw;
+    height: 0 auto;
+    font-family: textfont1;
+    font-weight: normal;
+    margin: 0 auto;
+    margin-left: -10%;
+}
+
+
+@font-face {
+    font-family:litletie;
+    src: url('../asset/font/FZJingHJW.TTF');
+}
+
+.tit{
+    font-size: 20px;
+    font-family: litletie;
+    text-align: center;
+    color: rgb(94, 84, 40);
+    margin: 0 auto;
+    margin-top: 250px;
+}
