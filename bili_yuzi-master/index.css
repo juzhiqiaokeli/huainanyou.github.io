@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+}
+
+.cont{
+	margin: 0 auto;
+	margin-left: 13%;
+
+}
+
+#cont{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	margin-left: 30%;
+}
+
+.ima{
+	width: 200px;
+	padding: 18px;
+	margin: 30px;
+	border: 0;
+	border-radius: 10px;
+	transition: transform 0.8s;
+	-webkit-transform: transform 0.8s;
+}
+
+.ima:hover{
+	transform: scale(1.5) rotate(0deg) !important;
+}
+
+#a{
+	transform: rotate(12deg);
+}
+
+#b{
+	transform: rotate(-5deg);
+}
+
+#c{
+	transform: rotate(10deg);
+}
+
+#d{
+	transform: rotate(8deg);
+}
+
+#e{
+	transform: rotate(-10deg);
+}
+
